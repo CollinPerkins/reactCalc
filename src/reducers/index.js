@@ -1,7 +1,10 @@
-import { combineReducers } from 'redux';
+import { combineReducers, createStore } from 'redux';
+import CalcReducer from './reducer_calc';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  calcState: CalcReducer
 });
+
+const store = createStore(rootReducer);
 
 export default rootReducer;

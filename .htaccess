@@ -1,5 +1,0 @@
-AuthName "Please Login"
-AuthType Basic
-AuthUserFile /dry-garden-34915.herokuapp.com/.htpasswd
-AuthGroupFile /dev/null
-require valid-user

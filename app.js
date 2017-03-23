@@ -4,10 +4,10 @@ const port = process.env.PORT || 3030;
 const app = express();
 const cors = require('cors');
 const axios = require('axios');
-var wwwhisper = require('connect-wwwhisper');
+// var wwwhisper = require('connect-wwwhisper');
 
-app.use(wwwhisper());
-app.use(wwwhisper(false));
+// app.use(wwwhisper());
+// app.use(wwwhisper(false));
 app.use(express.static(__dirname + '/'));
 
 app.use(cors());
